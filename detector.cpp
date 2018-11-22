@@ -71,7 +71,10 @@ Detector::Detector()
 
 Detector::~Detector()
 {
-    
+    if ( _sp ) {
+        delete _sp;
+        _sp = NULL;
+    }
 }
 
 void Detector::load_predictor( const mxArray *str )
