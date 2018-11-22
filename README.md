@@ -1,7 +1,5 @@
 Thin wrapper around dlib's awesome face detection and alignment
 
-**WARNING:** Linux `.mexa64` binary contains a bug causing memory leak when the detector object is created and destroyed repeatedly.**
-
 The code is written to be minimalistic and without any unecessary dependencies besides dlib. Tested in Win 10 x64 and Ubuntu 16.04, both with MATLAB 2016b.
 
 Data for the shape predictor can be downloaded at <http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2>. Without it, only the face detection in form of bounding boxes will work.
